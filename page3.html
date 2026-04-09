@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Message 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="https://files.catbox.moe/3xte9k.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+  <h2 id="text"></h2>
+  <button class="next" onclick="goCake()">Next 🎂</button>
+</div>
+
+<script>
+const message = `Happy Birthday to the most special girl, my bestie jan Arooj 🎂👑💖
+
+You’re not just my best friend, you’re my whole vibe, my happiness, and my favorite person 🥹💕
+
+With you, every moment feels magical and every laugh feels extra special ✨😂
+
+May your life be filled with endless smiles, crazy adventures, and all the love you truly deserve 🌸💫💝
+
+I pray Allah blesses you with success, peace, and everything your heart wishes for 🤲❤️
+
+Thank you for being my partner in crime, my secret keeper, and my forever support 🫶😄
+
+I’m so lucky to have you in my life, Arooj 💕🥰
+
+Love you forever, bestie jan 😘💖
+Now enjoy your day like a queen… because today is all about YOU 👑🎉🔥`;
+
+let i = 0;
+function typeWriter() {
+  if (i < message.length) {
+    document.getElementById("text").innerHTML += message.charAt(i);
+    i++;
+    setTimeout(typeWriter, 30);
+  }
+}
+typeWriter();
+</script>
+
+</body>
+</html>
